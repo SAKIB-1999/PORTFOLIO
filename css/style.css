@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lobster', cursive;
+}
+
+.container{
+    width: 100%;
+    height: 99vh;
+    background: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    margin: 0 45px;
+    font-size: 50px;
+    color: #fff;
+    transition: color .5s;
+}
+
+.navbar ul li a:hover{
+    color: tomato;
+}
+
+
+.underline{
+    display: inline;
+    position: relative;
+    overflow: hidden;
+  }
+  .underline:after{
+    content: "";
+    position: absolute;
+    z-index: 999;
+    left: 0;
+    right: 100%;
+    bottom: -5px;
+    background: tomato;
+    height: 1.5px;
+    transition-property: left right;
+    transition-duration: 1s;
+    transition-timing-function: ease-out;
+  }
+  
+  .underline:hover:after,
+  .underline:focus:after,
+  .underline:active:after{
+    right: 0;
+  }
+
+  .topline{
+    display: inline;
+    position: relative;
+    overflow: hidden;
+  }
+
+
+  .topline:before{
+    content: "";
+    position: absolute;
+    z-index: 999;
+    right: 0;
+    left: 100%;
+    top: -5px;
+    background: tomato;
+    height: 1.5px;
+    transition-property: right left;
+    transition-duration: 1s;
+    transition-delay: .8s;
+    transition-timing-function: ease-out;
+  }
+  
+  .topline:hover:before,
+  .topline:focus:before,
+  .topline:active:before{
+    left: 0;
+  }
